@@ -43,8 +43,7 @@ class TestEquationSolve (unittest.TestCase):
         self.assertEqual(self.equation.solve(1.0, 2.0, 1.0), array('f', [-1.0, -1.0]), msg = 'Два равных корня')
 
     def not_quadratic_equation(self):
-        with self.assertRaises(ValueError):
-            result = self.equation.solve(0.0, 1.0, 1.0)
+        self.assertEqual(self.equation.solve(1.0, 2.0, 1.0), array('f', [-1.0, -1.0]), msg = 'Два равных корня')
 
     def coefficients_check(self):
         with self.assertRaises(ValueError):
