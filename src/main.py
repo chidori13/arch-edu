@@ -42,10 +42,11 @@ class TestEquationSolve (unittest.TestCase):
     def test_one_root(self):
         self.assertEqual(self.equation.solve(1.0, 2.0, 1.0), array('f', [-1.0, -1.0]), msg = 'Два равных корня')
 
-    def not_quadratic_equation(self):
-        self.assertEqual(self.equation.solve(1.0, 2.0, 1.0), array('f', [-1.0, -1.0]), msg = 'Два равных корня')
+    def test_not_quadratic_equation(self):
+        with self.assertRaises(ValueError):
+            result = self.equation.solve(0.0, 1.0, 1.0)
 
-    def coefficients_check(self):
+    def test_coefficients_check(self):
         with self.assertRaises(ValueError):
             result = self.equation.solve(nan, 1.0, 1.0)
 
@@ -55,5 +56,5 @@ def main():
     test_solver.test_no_roots()
     test_solver.test_two_roots()
     test_solver.test_one_root()
-    test_solver.not_quadratic_equation()
-    test_solver.coefficients_check()
+    test_solver.test_not_quadratic_equation()
+    test_solver.test_coefficients_check()
