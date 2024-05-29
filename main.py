@@ -1,13 +1,17 @@
 from abc import ABC
-import numpy as np
+import array from numpy
 
+
+class Vector:
+    @staticmethod
+    def plus(a: Vector, b: Vector)->Vector:
 class Movable(ABC):
-    def get_location() -> np.array:
+    def get_location() -> Vector:
 
-    def set_location():
+    def set_location(new_value: Vector):
+    def get_velocity() -> Vector:
+
 class Move:
+    def __init__(self, _movable: Movable):
+        _movable.set_location(Vector.plus(_movable.get_location(), _movable.get_velocity()))
 
-    Movable _movable
-    def __init__(self, Movable movable):
-        _movable.set_location()
-        _movable.get_location()
