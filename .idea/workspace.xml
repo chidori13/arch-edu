@@ -74,8 +74,8 @@
       <recent name="C:\Users\Christine\PycharmProjects\arch-edu\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for main.MoveTest.test_no_roots">
-    <configuration name="Python tests for main.MoveTest" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests for main.TestMove.test_impossible_set_location">
+    <configuration name="Python tests for main.TestMove" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="arch-edu" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -85,11 +85,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;main.MoveTest&quot;" />
+      <option name="_new_target" value="&quot;main.TestMove&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for main.MoveTest.test_no_roots" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for main.TestMove.test_impossible_get_location" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="arch-edu" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -99,59 +99,59 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;main.MoveTest.test_no_roots&quot;" />
+      <option name="_new_target" value="&quot;main.TestMove.test_impossible_get_location&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for main.TestEquationSolve" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for main.TestMove.test_impossible_get_velocity" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="arch-edu" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;main.TestEquationSolve&quot;" />
+      <option name="_new_target" value="&quot;main.TestMove.test_impossible_get_velocity&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for main.TestEquationSolve.test_coefficients_check" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for main.TestMove.test_impossible_set_location" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="arch-edu" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;main.TestEquationSolve.test_coefficients_check&quot;" />
+      <option name="_new_target" value="&quot;main.TestMove.test_impossible_set_location&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for main.TestEquationSolve.test_one_root" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for main.TestMove.test_usual_move" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="arch-edu" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;main.TestEquationSolve.test_one_root&quot;" />
+      <option name="_new_target" value="&quot;main.TestMove.test_usual_move&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for main.MoveTest.test_no_roots" />
-        <item itemvalue="Python tests.Python tests for main.MoveTest" />
-        <item itemvalue="Python tests.Python tests for main.TestEquationSolve.test_coefficients_check" />
-        <item itemvalue="Python tests.Python tests for main.TestEquationSolve" />
-        <item itemvalue="Python tests.Python tests for main.TestEquationSolve.test_one_root" />
+        <item itemvalue="Python tests.Python tests for main.TestMove.test_impossible_set_location" />
+        <item itemvalue="Python tests.Python tests for main.TestMove.test_impossible_get_velocity" />
+        <item itemvalue="Python tests.Python tests for main.TestMove.test_impossible_get_location" />
+        <item itemvalue="Python tests.Python tests for main.TestMove.test_usual_move" />
+        <item itemvalue="Python tests.Python tests for main.TestMove" />
       </list>
     </recent_temporary>
   </component>
@@ -189,5 +189,13 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update python-app.yml" />
     <option name="LAST_COMMIT_MESSAGE" value="Update python-app.yml" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="tests">
+        <watch expression="move_command.movable.set_location.return_value.call_args_list" language="Python" />
+        <watch expression="move_command.movable.set_location.return_value.call_args_list" language="Python" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
