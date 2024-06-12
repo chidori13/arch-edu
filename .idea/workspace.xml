@@ -74,35 +74,7 @@
       <recent name="C:\Users\Christine\PycharmProjects\arch-edu\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for main.TestMove.test_impossible_set_location">
-    <configuration name="Python tests for main.TestMove" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="arch-edu" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;main.TestMove&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for main.TestMove.test_impossible_get_location" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="arch-edu" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;main.TestMove.test_impossible_get_location&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Python tests for main.TestRotate.test_usual_rotate">
     <configuration name="Python tests for main.TestMove.test_impossible_get_velocity" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="arch-edu" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -145,13 +117,41 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for main.TestRotate" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="arch-edu" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;main.TestRotate&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for main.TestRotate.test_usual_rotate" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="arch-edu" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;main.TestRotate.test_usual_rotate&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for main.TestRotate.test_usual_rotate" />
+        <item itemvalue="Python tests.Python tests for main.TestRotate" />
+        <item itemvalue="Python tests.Python tests for main.TestMove.test_usual_move" />
         <item itemvalue="Python tests.Python tests for main.TestMove.test_impossible_set_location" />
         <item itemvalue="Python tests.Python tests for main.TestMove.test_impossible_get_velocity" />
-        <item itemvalue="Python tests.Python tests for main.TestMove.test_impossible_get_location" />
-        <item itemvalue="Python tests.Python tests for main.TestMove.test_usual_move" />
-        <item itemvalue="Python tests.Python tests for main.TestMove" />
       </list>
     </recent_temporary>
   </component>

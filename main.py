@@ -77,22 +77,66 @@ class Angle:
     def __init__(self, direction: int, n: int):
         self.n = n
         self.direction = direction
-
+    @staticmethod
     def __operate(f, a, b):
         return Angle(*f(a, b))
 
+    def plus(self, other):
+        return Angle.__operate(lambda a, b: ((a.direction+b.direction)%a.n, a.n), self, other)
 
 class Rotable(ABC):
-    def get_angle()->Angle:
-    pass
-    def set_angle(new_value: Angle):
-    pass
-    def get_angular_velocity()->Angle:
-    pass
+
+    def __init__(self):
+        pass
+    def get_angle(self)->Angle:
+        pass
+    def set_angle(self, new_value: Angle):
+        pass
+    def get_angular_velocity(self)->Angle:
+        pass
 
 class Rotate:
     def __init__(self, rotable: Rotable):
         self.rotable = rotable
 
     def execute(self):
-        self.rotable.set_angle(Angle.plus(self._rotable.get_angle(), self._rotable.get_angular_velocity()))
+        self.rotable.set_angle(Angle.plus(self.rotable.get_angle(), self.rotable.get_angular_velocity()))
+
+
+class TestRotate:
+    def test_usual_rotate(self):
+        rotate_mock = Mock(spec=Rotable)
+        rotate_mock.get_angle.return_value = Angle(2, 8)
+        rotate_mock.get_angular_velocity.return_value = Angle(3, 8)
+        rotate_command = Rotate(rotate_mock)
+        rotate_command.execute()
+        assert(rotate_mock.get_angle, Angle(5,8))
+    def test_impossible_get_angle(self):
+        rotate_mock = Mock(spec=Rotable)
+        attrs = {'get_angular_velocity.return_value': Angle(1,8), 'get_angle.side_effect': ValueError}
+        rotate_mock.configure_mock(**attrs)
+        rotate_command = Rotate(rotate_mock)
+        try:
+            rotate_command.execute()
+        except ValueError:
+            print(f'Невозможно повернуть объект, так как не удалось получить первоначальный угол поворота')
+
+    def test_impossible_get_angular_velocity(self):
+        rotate_mock = Mock(spec=Rotable)
+        attrs = {'get_angle.return_value': Angle(7,8), 'get_angular_velocity.side_effect': ValueError}
+        rotate_mock.configure_mock(**attrs)
+        rotate_command = Rotate(rotate_mock)
+        try:
+            rotate_command.execute()
+        except ValueError:
+            print(f'Невозможно повернуть объект, не зная его угловой скорости')
+
+    def test_impossible_set_angle(self):
+        rotate_mock = Mock(spec=Rotable)
+        attrs = {'get_angle.return_value': Angle(5, 8), 'get_angular_velocity.return_value': Angle(2, 8),'set_angle.side_effect': Exception}
+        rotate_mock.configure_mock(**attrs)
+        rotate_command = Move(rotate_mock)
+        try:
+            rotate_command.execute()
+        except Exception:
+            print(f'Не удается повернуть объект, так как невозможно задать новый угол поворота')
