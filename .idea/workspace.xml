@@ -148,8 +148,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.Python tests for main.TestRotate.test_usual_rotate" />
-        <item itemvalue="Python tests.Python tests for main.TestRotate" />
         <item itemvalue="Python tests.Python tests for main.TestMove.test_usual_move" />
+        <item itemvalue="Python tests.Python tests for main.TestRotate" />
         <item itemvalue="Python tests.Python tests for main.TestMove.test_impossible_set_location" />
         <item itemvalue="Python tests.Python tests for main.TestMove.test_impossible_get_velocity" />
       </list>

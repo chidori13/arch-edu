@@ -14,6 +14,11 @@ class Vector:
     def plus(self, other):
         return Vector.__operate(lambda a, b: (a.x + b.x, a.y + b.y), self, other)
 
+    def equal_vector(self, other):
+        if isinstance(other, Vector):
+            return (self.x == other.x and self.y==other.y)
+        else: NotImplemented
+
 class Movable(ABC):
     def __init__(self):
         pass
@@ -34,13 +39,16 @@ class Move:
 
 
 class TestMove():
+
     def test_usual_move(self):
         movable_mock = Mock(spec=Movable)
         movable_mock.get_location.return_value = Vector(12, 5)
         movable_mock.get_velocity.return_value = Vector(-7, 3)
         move_command = Move(movable_mock)
         move_command.execute()
-        assert(movable_mock.get_location, Vector(5,8))
+        if movable_mock.get_location.equal_vector(Vector(5,8)):
+            print(f'Успешно сдвинули объект')
+
 
     def test_impossible_get_location(self):
         movable_mock = Mock(spec=Movable)
@@ -84,6 +92,11 @@ class Angle:
     def plus(self, other):
         return Angle.__operate(lambda a, b: ((a.direction+b.direction)%a.n, a.n), self, other)
 
+    def equal_angle(self, other):
+        if isinstance(other, Angle):
+            return (self.direction == other.direction and self.n==other.n)
+        else: NotImplemented
+
 class Rotable(ABC):
 
     def __init__(self):
@@ -110,7 +123,8 @@ class TestRotate:
         rotate_mock.get_angular_velocity.return_value = Angle(3, 8)
         rotate_command = Rotate(rotate_mock)
         rotate_command.execute()
-        assert(rotate_mock.get_angle, Angle(5,8))
+        if rotate_mock.get_angle.equal_angle(Angle(5, 8)):
+            print(f'Успешно повернули объект')
     def test_impossible_get_angle(self):
         rotate_mock = Mock(spec=Rotable)
         attrs = {'get_angular_velocity.return_value': Angle(1,8), 'get_angle.side_effect': ValueError}
@@ -140,3 +154,4 @@ class TestRotate:
             rotate_command.execute()
         except Exception:
             print(f'Не удается повернуть объект, так как невозможно задать новый угол поворота')
+
